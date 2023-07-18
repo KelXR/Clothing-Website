@@ -1,0 +1,452 @@
+* {
+    /* box-sizing: border-box; */
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    list-style: none;
+    max-width: 100%;
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+header{
+    background-color: white;
+    height: 8.7rem;
+}
+
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between; 
+    padding: 1.875rem;
+    align-items: center;
+    padding-left: 0;
+}
+
+nav img{
+    width: 12.5rem;
+    padding-right: 1.875rem;
+    padding-left: 3.125rem;
+}
+
+.navbar{
+    text-align: right;
+}
+
+.navbar ul li{
+    display: inline-block;
+    position: relative;
+}
+
+.current::before{
+    content: '';
+    width: 20%;
+    height: 0.15625rem;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+
+.current:hover::before{
+    width: 0%;
+}
+
+.navbar ul li a{
+    font-weight: 100;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: black;
+    padding: 0.25rem 0.4rem;
+}
+
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 0.15625rem;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+
+.navbar ul li:hover::after{
+    width: 80%;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 2.8125rem;
+    height: 0.3125rem;
+    margin: 0.625rem auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+.body{
+    margin-bottom: 50px;
+}
+
+.bannerAbout{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0)), url(./assetsHCIProject/BGAboutUs.png);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 5.375rem;
+}
+
+.bannerText{
+    display: block;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 10.0625rem;
+    justify-content: center;
+}
+
+.bannerTitle{
+    font-size: 4.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: bolder;
+}
+
+.bannerText img{
+    width: 12.5rem;
+}
+
+.row1About{
+    margin: 0 5.8125rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.text1About{
+    position: relative;
+    text-align: justify;
+    align-items: center;
+    width: 32.5625rem;
+    padding-bottom: 4rem;
+}
+
+.text1About::before{
+    content: '';
+    width: 100%;
+    height: 0.35625rem;
+    background: black;
+    display: block;
+    margin: auto;
+    margin-bottom: 3rem;
+    transition: 0.4s;
+}
+
+.text1About::after{
+    content: '';
+    width: 100%;
+    height: 0.35625rem;
+    background: black;
+    display: block;
+    margin: auto;
+    margin-top: 3rem;
+    transition: 0.4s;
+}
+
+
+.titleText1About{
+    font-size: 3rem;
+    font-weight: bolder;
+    padding-bottom: 4rem;
+}
+
+.infoText1About{
+    font-size: 1.525rem;
+}
+
+.row2About{
+    margin: 0 5.8125rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5.375rem;
+}
+
+.text2About{
+    position: relative;
+    text-align: justify;
+    align-items: center;
+    width: 38.5625rem;
+    margin-bottom: 8rem;
+}
+
+.text2About::before{
+    content: '';
+    width: 100%;
+    height: 0.35625rem;
+    background: black;
+    display: block;
+    margin: auto;
+    margin-bottom: 3rem;
+    transition: 0.4s;
+}
+
+.text2About::after{
+    content: '';
+    width: 100%;
+    height: 0.35625rem;
+    background: black;
+    display: block;
+    margin: auto;
+    margin-top: 3rem;
+    transition: 0.4s;
+}
+
+.titleText2About{
+    font-size: 3rem;
+    font-weight: bolder;
+    padding-bottom: 4rem;
+}
+
+.infoText2About{
+    font-size: 1.525rem;
+}
+
+.row2About img{
+    padding-bottom: 4rem;
+}
+
+footer{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    height: max-content;
+    background-color: #1E1E1E;
+    color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul{
+    display: flex;
+    padding: 2.5rem 2.5rem 0px 2.5rem;
+    
+}
+
+.pisah{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+    padding: 0 auto;
+    
+}
+
+.descList{
+    display: block;
+}
+
+.descList li{
+    padding-bottom: 0.625rem;
+}
+
+.descList p{
+    padding-bottom: 1.9375rem;
+}
+
+.descList a{
+    color: white;
+    font-weight: 600;
+}
+
+.descList img{
+    padding-right: 10px;
+}
+
+.Log{
+    width: 15rem;
+    height: 15rem;
+    padding-top: 1.3rem;
+}
+
+.since{
+    color: white;
+    font-weight: 100;
+    padding-top: 3.75rem;
+    padding-bottom: 2rem;
+}
+
+@media only screen and (max-width:800px){
+    *{
+        font-size: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    header{
+        z-index: 1;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        height: 100%;
+    }
+
+    nav a img{
+        padding-left: 0;
+        width: 180px;
+        height: 60px;
+    }
+
+    .navbar ul li{
+        margin: 3px 0;
+    }
+
+    .navbar ul li a{
+        color: white;
+    }
+
+    .current::before{
+       background: white;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .navbar ul{
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        left: -100%;
+        top: 14ch;
+        gap: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: #1E1E1E;
+        width: 100%;
+        transition: 0.5s;
+    }
+
+    .navbar ul li::after{
+        background: white;
+    }
+
+    .pisah{
+        flex-direction: column;
+    }
+
+    .descList{
+        padding: 0;
+        padding-bottom: 2rem;
+    }
+
+    .bannerText{
+        display: block;
+        position: relative;
+        color: white;
+        text-align: center;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        justify-content: center;
+    }
+    
+    .bannerTitle{
+        font-size: 2.5rem;
+        padding-bottom: 0.5rem;
+        font-weight: bolder;
+    }
+
+    .titleText1About{
+        text-align: center;
+        font-size: 1.625rem;
+        font-weight: bolder;
+        padding-bottom: 1rem;
+    }
+    
+    .infoText1About{
+        font-size: 0.725rem;
+    }
+
+    .titleText2About{
+        text-align: center;
+        font-size: 1.625rem;
+        font-weight: bolder;
+        padding-bottom: 1rem;
+    }
+    
+    .infoText2About{
+        font-size: 0.725rem;
+    }
+
+    footer ul{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .since{
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .Log{
+        padding-right: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .Mid{
+        padding-top: 30px;
+    }
+
+    .descList{
+        padding-left: 0;
+    }
+
+    .hamburger.on .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.on .bar:nth-child(1){
+        transform: rotate(45deg) translateY(20px);
+    }
+
+    .hamburger.on .bar:nth-child(3){
+        transform: rotate(-45deg) translateY(-20px);
+    }
+
+    .navbar ul.on{
+        left: 0;
+    }
+
+    .navbar ul li{
+        padding: 0.5rem 1.25rem;
+    }
+}
+
+
+

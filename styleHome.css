@@ -1,0 +1,761 @@
+* {
+    /* box-sizing: border-box; */
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    list-style: none;
+    max-width: 100%;
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+header{
+    background-color: white;
+    height: 8.7rem;
+}
+
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between; 
+    padding: 1.875rem;
+    align-items: center;
+    padding-left: 0;
+}
+
+nav img{
+    width: 12.5rem;
+    padding-right: 1.875rem;
+    padding-left: 3.125rem;
+}
+
+.navbar{
+    text-align: right;
+}
+
+.navbar ul li{
+    display: inline-block;
+    position: relative;
+}
+
+.current::before{
+    content: '';
+    width: 20%;
+    height: 0.15625rem;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+
+.current:hover::before{
+    width: 0%;
+}
+
+.navbar ul li a{
+    font-weight: 100;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: black;
+    padding: 0.25rem 0.4rem;
+}
+
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 0.15625rem;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+
+.navbar ul li:hover::after{
+    width: 80%;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 2.8125rem;
+    height: 0.3125rem;
+    margin: 0.625rem auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+.containerBanner{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0)), url(./assetsHCIProject/bannerImg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.body{
+    margin-bottom: 50px;
+}
+
+#batasAtas{
+    width: 100%;
+    height: 4.375rem;
+    background-color: #F4F4F4;
+}
+
+.allText{
+    display: block;
+    position: relative;
+    color: black;
+    text-align: right;
+    padding: 3rem;
+    justify-content: center;
+}
+
+.title{
+    font-size: 1.85rem;
+    padding-bottom: 0.875rem;
+    font-weight: bolder;
+}
+
+.subTitle{
+    font-size: 3.25rem;
+    font-weight: bolder;
+    padding-bottom: 1.875rem;
+}
+
+.explore{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    font-size: 22px;
+    background-color: black;
+    cursor: pointer;
+    text-align: center;
+}
+
+.explore:hover{
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+
+.grid1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 0 300px;
+    margin-bottom: 80px;
+}
+
+.grid1 img{
+    width: 600px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, black 100%);
+}
+
+.modelContent1{
+    position: relative;
+    height: 100%;
+}
+
+.textContent1{
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    right: 30px;
+    color: white;
+}
+
+.textModelContent1{
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.infoTextModelContent1{
+    font-size: 38px;
+}
+
+.modelContent2{
+    position: relative;
+}
+
+.textContent2{
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    right: 30px;
+    color: white;
+}
+
+.textModelContent2{
+    font-weight: bolder;
+    font-size: 26px;
+}
+
+.infoTextModelContent2{
+    font-size: 38px;
+}
+
+.midText{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+    margin-top: 70px;
+    text-align: left;
+}
+
+.titleContent1{
+    padding-bottom: 0.575rem;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.subtitleContent1{
+    font-size: 54px;
+    font-weight: bolder;
+    padding-bottom: 0.975rem;
+}
+
+.shopNow{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 6px;
+    font-size: 18px;
+    background-color: white;
+    cursor: pointer;
+    border: 2px solid black;
+    width: 140px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.shopNow:hover{
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+
+.banner2{
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5)), url(./assetsHCIProject/image20.jpg);
+}
+
+.textBanner2{
+    color: white;
+    text-align: right;
+    /* width: 100%; */
+    padding: 3rem;
+}
+
+.titleBanner2{
+    font-size: 1.95rem;
+    padding-bottom: 0.875rem;
+    font-weight: bolder;
+}
+
+.subTitleBanner2{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding-bottom: 1.875rem;
+}
+
+.goNow{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    font-size: 22px;
+    background-color: black;
+    cursor: pointer;
+    text-align: center;
+    width: 108px;
+}
+
+.goNow:hover{
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+
+
+.grid2{
+    display: grid;
+    height: 120vh;
+    grid-template-columns: 0.8fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1.2fr 1fr;
+    grid-template-areas: 
+        "c1 c1 c2 c3"
+        "c1 c1 c5 c5"
+        "c4 c4 c5 c5"
+    ;
+    gap: 2rem;
+    margin: 60px 60px;
+}
+
+.c1{
+    grid-area: c1;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.6)), url(./assetsHCIProject/image\ 31.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+}
+
+.c1Text{
+    position: absolute;
+    left: 2.875rem;
+    bottom: 3.875rem;
+    text-align: left;
+    color: white;
+}
+
+.textC1{
+    font-size: 1.625rem;
+    font-weight: bolder;
+}
+
+.text2C1{
+    font-size: 3.625rem;
+    font-weight: bolder;
+}
+
+.c2{
+    grid-area: c2;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.6)), url(./assetsHCIProject/c2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+}
+
+.c2Text{
+    position: absolute;
+    left: 1.875rem;
+    bottom: 2.075rem;
+    right: 2.075rem;
+    text-align: right;
+    color: white;
+}
+
+.textC2{
+    font-size: 1.625rem;
+    font-weight: bolder;
+}
+
+.text2C2{
+    font-size: 2.325rem;
+    font-weight: bolder;
+}
+
+.c3{
+    grid-area: c3;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.6)), url(./assetsHCIProject/c3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+}
+
+.c3Text{
+    position: absolute;
+    left: 1.875rem;
+    bottom: 2.075rem;
+    right: 2.075rem;
+    text-align: right;
+    color: white;
+}
+
+.textC3{
+    font-size: 1.625rem;
+    font-weight: bolder;
+}
+
+.text2C3{
+    font-size: 2.325rem;
+    font-weight: bolder;
+}
+
+.c4{
+    grid-area: c4;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.7)), url(./assetsHCIProject/c4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.c4Text{
+    position: absolute;
+    left: 2.875rem;
+    bottom: 2.075rem;
+    text-align: left;
+    color: white;
+}
+
+.textC4{
+    font-size: 1.625rem;
+    font-weight: bolder;
+}
+
+.text2C4{
+    font-size: 2.325rem;
+    font-weight: bolder;
+}
+
+.c5{
+    grid-area: c5;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.7)), url(./assetsHCIProject/image24.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+}
+
+.c5Text{
+    position: absolute;
+    left: 2.875rem;
+    bottom: 2.075rem;
+    text-align: left;
+    color: white;
+}
+
+.textC5{
+    font-size: 1.625rem;
+    font-weight: bolder;
+}
+
+.text2C5{
+    font-size: 2.325rem;
+    font-weight: bolder;
+}
+
+footer{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    height: max-content;
+    background-color: #1E1E1E;
+    color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul{
+    display: flex;
+    padding: 2.5rem 2.5rem 0px 2.5rem;
+    
+}
+
+.pisah{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+    padding: 0 auto;
+    
+}
+
+.descList{
+    display: block;
+}
+
+.descList li{
+    padding-bottom: 0.625rem;
+}
+
+.descList p{
+    padding-bottom: 1.9375rem;
+}
+
+.descList a{
+    color: white;
+    font-weight: 600;
+}
+
+.descList img{
+    padding-right: 10px;
+}
+
+.Log{
+    width: 15rem;
+    height: 15rem;
+    padding-top: 1.3rem;
+}
+
+.since{
+    color: white;
+    font-weight: 100;
+    padding-top: 3.75rem;
+    padding-bottom: 2rem;
+}
+
+@media only screen and (max-width:800px){
+    *{
+        font-size: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    header{
+        z-index: 1;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        height: 100%;
+    }
+
+    nav a img{
+        padding-left: 0;
+        width: 180px;
+        height: 60px;
+    }
+
+    .grid1{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height:max-content;
+    }
+
+    .grid1 img{
+        max-width: 100%;
+    }
+
+    .modelContent1{
+        max-width: 100%;
+    }
+
+    .modelContent2{
+        max-width: 100%;
+    }
+
+    .navbar ul li{
+        margin: 3px 0;
+    }
+
+    .navbar ul li a{
+        color: white;
+    }
+
+    .current::before{
+       background: white;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .navbar ul{
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        left: -100%;
+        top: 14ch;
+        gap: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: #1E1E1E;
+        width: 100%;
+        transition: 0.5s;
+    }
+
+    .navbar ul li::after{
+        background: white;
+    }
+
+    .pisah{
+        flex-direction: column;
+    }
+
+    .descList{
+        padding: 0;
+        padding-bottom: 2rem;
+    }
+
+    footer ul{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .since{
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .Log{
+        padding-right: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .Mid{
+        padding-top: 30px;
+    }
+
+    .descList{
+        padding-left: 0;
+    }
+
+    .hamburger.on .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.on .bar:nth-child(1){
+        transform: rotate(45deg) translateY(20px);
+    }
+
+    .hamburger.on .bar:nth-child(3){
+        transform: rotate(-45deg) translateY(-20px);
+    }
+
+    .navbar ul.on{
+        left: 0;
+    }
+
+    .navbar ul li{
+        padding: 0.5rem 1.25rem;
+    }
+
+    .grid2{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 2fr 2fr 2fr 2fr;
+        grid-template-areas: 
+            "c1"
+            "c2"
+            "c3"
+            "c4"
+            "c5"
+        ;
+    }
+
+    .grid2 div{
+        width: auto;
+        height: auto;
+    }
+
+    .c1Text{
+        position: absolute;
+        left: 1.875rem;
+        bottom: 2.075rem;
+        right: 2.075rem;
+        text-align: right;
+        color: white;
+    }
+    
+    .textC1{
+        font-size: 1.025rem;
+        font-weight: bolder;
+    }
+    
+    .text2C1{
+        font-size: 1.525rem;
+        font-weight: bolder;
+    }
+
+    .c2Text{
+        position: absolute;
+        left: 1.875rem;
+        bottom: 2.075rem;
+        right: 2.075rem;
+        text-align: right;
+        color: white;
+    }
+    
+    .textC2{
+        font-size: 1.025rem;
+        font-weight: bolder;
+    }
+    
+    .text2C2{
+        font-size: 1.525rem;
+        font-weight: bolder;
+    }
+
+    .c3Text{
+        position: absolute;
+        left: 1.875rem;
+        bottom: 2.075rem;
+        right: 2.075rem;
+        text-align: right;
+        color: white;
+    }
+    
+    .textC3{
+        font-size: 1.025rem;
+        font-weight: bolder;
+    }
+    
+    .text2C3{
+        font-size: 1.525rem;
+        font-weight: bolder;
+    }
+
+    .c4Text{
+        position: absolute;
+        left: 1.875rem;
+        bottom: 2.075rem;
+        right: 2.075rem;
+        text-align: right;
+        color: white;
+    }
+    
+    .textC4{
+        font-size: 1.025rem;
+        font-weight: bolder;
+    }
+    
+    .text2C4{
+        font-size: 1.525rem;
+        font-weight: bolder;
+    }
+
+    .c5Text{
+        position: absolute;
+        left: 1.875rem;
+        bottom: 2.075rem;
+        right: 2.075rem;
+        text-align: right;
+        color: white;
+    }
+    
+    .textC5{
+        font-size: 1.025rem;
+        font-weight: bolder;
+    }
+    
+    .text2C5{
+        font-size: 1.525rem;
+        font-weight: bolder;
+    }
+}
+
+
+

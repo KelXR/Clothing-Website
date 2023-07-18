@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription</title>
+    <link rel="stylesheet" href="styleSubs.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html"> <img src="assetsHCIProject/logo.png" alt=""> </a>
+            <div class = "navbar">
+                <ul>
+                    <li> <a href= "home.html"> Home </a> </li>
+                    <li> <a href= "clothes.html"> Clothes </a> </li>
+                    <li> <a href= "aboutus.html"> About Us </a> </li>
+                    <li> <a href= "Location.html"> Locations </a> </li>
+                    <li class="current"> <a href= "Subs.html"> Subscribe </a> </li>
+                </ul>
+            </div>
+            <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            </div>
+        </nav>
+        
+    </header>
+    
+    <div class = "body">
+        <form class = "formBg">
+            <div class = "formSubs">
+                <div class = "allInputForm">
+                    <div class = "imgInput">
+                        <p class = "titleImageForm"> Subscription Form </p>
+                    </div>
+                    <div class = "insideForm">
+                        <div class = "spaceInput">
+                            <p id = "WarnName">*Invalid Name</p>
+                            <label for="name" class = "topInput" id="names"> Name </label>
+                            <input type="text" id="name" name ="name" class = "lengthBox" autocomplete="off">
+                        </div>
+                        
+                        <div class = "spaceInput">
+                            <p id="warnEmail">*Invalid Email</p>
+                            <label for="email" class = "topInput"> E-Mail </label>
+                            <input type="email" class = "lengthBox" autocomplete="off" id="Email" placeholder="example@example.com">
+                        </div>
+                        <div class = "spaceInput">
+                            
+                            <label for="country" class = "topInput"> Country </label>
+                            <select name="country" class = "lengthBox2" id="Country">
+                                <option value="indonesia"> Indonesia </option>
+                                <option value="uk"> United Kingdom </option>
+                                <option value="france"> France </option>
+                                <option value="us"> United States </option>
+                                <option value="singapore"> Singapore </option>
+                            </select>
+                        </div>
+                        <div class = "spaceInput" >
+                            <p id="warnPN">*Invalid Phone Numbers</p>
+                            <label for="pN" class = "topInput"> Phone Number </label>
+                            <input id="Phone" type="tel" class = "lengthBox" autocomplete="off" name="pN" placeholder="Start with + followed by your country code">
+                        </div>
+                        <p id="warnCheck">*Please Check T&C</p>
+                        <div class = "spaceInput2">
+                            <input type="checkbox" class = "boxSize" id="Check">
+                            <label for="checkbox" class = "spaceBetweenBox"> I HAVE READ AND UNDERSTAND THE PRIVACY AND COOKIES POLICY AND AGREE TO RECEIVE PERSONALISED COMMERCIAL COMMUNICATIONS FROM M & T BY EMAIL. </label>
+                        </div>
+                        <input type="button" value="Subscribe" class = "submit" onclick="mainFN()">
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+
+    <footer>
+        <div class="pisah">
+            <ul>
+                <li>
+                    <ul class="descList Mid">
+                        <p>M & T</p>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="Subs.html">Subscribe</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="descList">
+                    <p>Shop And Visit</p>
+                    <li><a href="Location.html">M&T Store Locations </a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <ul class="descList Mid">
+                        <p>Find Us On</p>
+                        <li><img src="./assetsHCIProject/facebook.png" alt=""><a href="https://web.facebook.com/hmindonesia/?brand_redir=21415640912">Facebook</a></li>
+                        <li><img src="./assetsHCIProject/instagram.png" alt=""><a href="https://www.instagram.com/hm_man/?hl=en">Instagram</a></li>
+                        <li><img src="./assetsHCIProject/twitter.png" alt=""><a href="https://twitter.com/hmusa?lang=en">Twitter</a></li>
+                        <li><img src="./assetsHCIProject/youtube.png" alt=""><a href="https://www.youtube.com/channel/UCoc8tpGCY1wrp8pV7mI0scA">Youtube</a></li>
+                        <li><img src="./assetsHCIProject/tiktok.png" alt=""><a href="https://www.tiktok.com/@hm?lang=en">Tiktok</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="Log"><img src="./assetsHCIProject/logoFoot.png" alt=""></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="since">
+            <p>@2022-2025 M&T - All rights reserved. IND LICENCE #2540/I/1317</p>
+        </div>
+            
+    </footer>
+    <script src="subs.js"></script>
+</body>
+</html>

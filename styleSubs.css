@@ -1,0 +1,474 @@
+* {
+    /* box-sizing: border-box; */
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    list-style: none;
+    max-width: 100%;
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+header{
+    background-color: white;
+    height: 8.7rem;
+}
+
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between; 
+    padding: 1.875rem;
+    align-items: center;
+    padding-left: 0;
+}
+
+nav img{
+    width: 12.5rem;
+    padding-right: 1.875rem;
+    padding-left: 3.125rem;
+}
+
+.navbar{
+    text-align: right;
+}
+
+.navbar ul li{
+    display: inline-block;
+    position: relative;
+}
+
+.current::before{
+    content: '';
+    width: 20%;
+    height: 0.15625rem;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+
+.current:hover::before{
+    width: 0%;
+}
+
+.navbar ul li a{
+    font-weight: 100;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: black;
+    padding: 0.25rem 0.4rem;
+}
+
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 0.15625rem;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+
+.navbar ul li:hover::after{
+    width: 80%;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 2.8125rem;
+    height: 0.3125rem;
+    margin: 0.625rem auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+.formBg{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0)), url(./assetsHCIProject/BG_Subs.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.formSubs{
+    position: relative;
+    justify-content: center;
+    padding: 5.1875rem 0;
+}
+
+.allInputForm{
+    position: relative;
+    background-color: #181A20;
+    height: max-content;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgInput{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0)), url(./assetsHCIProject/pictureSubs.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.formImg{
+    opacity: 0.27;
+}
+
+.titleImageForm{
+    display: block;
+    position: relative;
+    color: white;
+    font-size: 3.75rem;
+    text-align: center;
+    margin: 10rem 14rem;
+    width: auto;
+    /* padding-left: 4rem;
+    padding-right: 4rem; */
+    justify-content: center;
+}
+
+.insideForm{
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 7rem 4rem 7rem;
+    align-items: center;
+}
+
+.lengthBox{
+    width: 30rem;
+    height: 1.9rem;
+    padding: 0.1rem 0.6rem 0.1rem 0;
+    font-size: 1rem;
+    border: 0;
+    background: none;
+    color: white;
+    outline: none;
+}
+
+.spaceInput::after{
+    content: '';
+    width: 100%;
+    height: 0.15625rem;
+    background: white;
+    display: block;
+    margin: auto;
+}
+
+.spaceBetweenBox{
+    font-size: 0.6rem;
+}
+
+.lengthBox2{
+    width: 31.2rem;
+    height: 2.4rem;
+    padding: 0.2rem 0.6rem 0.2rem 0;
+    font-size: 1rem;
+    border: 0;
+    outline: none;
+    background: none;
+    color: white;
+}
+
+option{
+    background-color: #181A20;
+    color: white;
+}
+
+.boxSize{
+    width: 2rem;
+    height: 2rem;
+}
+
+.spaceInput{
+    padding-bottom: 3rem;
+}
+
+.spaceInput2{
+    padding-bottom: 2.5rem;
+    width: 31rem;
+    display: flex;
+}
+
+.topInput{
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 18px;
+}
+
+.spaceBetweenBox{
+    padding-top: 0.4rem;
+    padding-left: 1rem;
+    font-size: 0.7rem;
+}
+
+.submit{
+    text-align: center;
+    display: inline-block;
+    width: 8rem;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+
+#WarnName{
+    display: none;
+    color: red;
+}
+
+#warnEmail{
+    display: none;
+    color: red;
+}
+
+#warnCount{
+    display: none;
+    color: red;
+}
+
+#warnPN{
+    display: none;
+    color: red;
+}
+
+#warnCheck{
+    display: none;
+    color: red;
+}
+
+footer{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    height: max-content;
+    background-color: #1E1E1E;
+    color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul{
+    display: flex;
+    padding: 2.5rem 2.5rem 0px 2.5rem;
+    
+}
+
+.pisah{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+    padding: 0 auto;
+    
+}
+
+.descList{
+    display: block;
+}
+
+.descList li{
+    padding-bottom: 0.625rem;
+}
+
+.descList p{
+    padding-bottom: 1.9375rem;
+}
+
+.descList a{
+    color: white;
+    font-weight: 600;
+}
+
+.descList img{
+    padding-right: 10px;
+}
+
+.Log{
+    width: 15rem;
+    height: 15rem;
+    padding-top: 1.3rem;
+}
+
+.since{
+    color: white;
+    font-weight: 100;
+    padding-top: 3.75rem;
+    padding-bottom: 2rem;
+}
+
+@media only screen and (max-width:800px){
+    *{
+        font-size: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    header{
+        z-index: 1;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        height: 100%;
+    }
+
+    nav a img{
+        padding-left: 0;
+        width: 180px;
+        height: 60px;
+    }
+
+    .navbar ul li{
+        margin: 3px 0;
+    }
+
+    .navbar ul li a{
+        color: white;
+    }
+
+    .current::before{
+       background: white;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .navbar ul{
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        left: -100%;
+        top: 14ch;
+        gap: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: #1E1E1E;
+        width: 100%;
+        transition: 0.5s;
+    }
+
+    .navbar ul li::after{
+        background: white;
+    }
+
+    .pisah{
+        flex-direction: column;
+    }
+
+    .descList{
+        padding: 0;
+        padding-bottom: 2rem;
+    }
+
+    footer ul{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .since{
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .Log{
+        padding-right: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .Mid{
+        padding-top: 30px;
+    }
+
+    .descList{
+        padding-left: 0;
+    }
+
+    .hamburger.on .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.on .bar:nth-child(1){
+        transform: rotate(45deg) translateY(20px);
+    }
+
+    .hamburger.on .bar:nth-child(3){
+        transform: rotate(-45deg) translateY(-20px);
+    }
+
+    .navbar ul.on{
+        left: 0;
+    }
+
+    .navbar ul li{
+        padding: 0.5rem 1.25rem;
+    }
+
+    .titleImageForm{
+        display: block;
+        position: relative;
+        color: white;
+        text-align: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        justify-content: center;
+        font-size: 2.6rem;
+        margin: 5rem 0;
+    }
+
+    .insideForm{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 4rem;
+        align-items: center;
+    }
+
+    .spaceBetweenBox{
+        padding-top: 1.1rem;
+    }
+
+    .boxSize{
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+
+

@@ -1,0 +1,465 @@
+* {
+    /* box-sizing: border-box; */
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    list-style: none;
+    max-width: 100%;
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+header{
+    background-color: white;
+    height: 8.7rem;
+}
+
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between; 
+    padding: 1.875rem;
+    align-items: center;
+    padding-left: 0;
+}
+
+nav img{
+    width: 12.5rem;
+    padding-right: 1.875rem;
+    padding-left: 3.125rem;
+}
+
+.navbar{
+    text-align: right;
+}
+
+.navbar ul li{
+    display: inline-block;
+    position: relative;
+}
+
+.current::before{
+    content: '';
+    width: 20%;
+    height: 0.15625rem;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+
+.current:hover::before{
+    width: 0%;
+}
+
+.navbar ul li a{
+    font-weight: 100;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: black;
+    padding: 0.25rem 0.4rem;
+}
+
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 0.15625rem;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+
+.navbar ul li:hover::after{
+    width: 80%;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 2.8125rem;
+    height: 0.3125rem;
+    margin: 0.625rem auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+.body{
+    margin-bottom: 50px;
+}
+
+.bgLc{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #3C3C3C;
+    background-position: center;
+    background-size: cover;
+}
+
+.lcTitle{
+    position: relative;
+    text-align: center;
+    padding: 1.6rem;
+    font-size: 1.8rem;
+    color: white;
+    
+}
+
+.gridLocation{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 5fr 2fr 0.2fr 7fr 2fr 2fr 5fr;
+    grid-template-areas: 
+        "a1 a1 a2 a2"
+        "a1 a1 a2 a2"
+        "a1 a1 a4 a4"
+        "a3 a3 a4 a4"
+        "a3 a3 a4 a4"
+        "a5 a5 a4 a4"
+        "a5 a5 a6 a6"
+        "a5 a5 a6 a6"
+    ;
+    gap: 2rem;
+    margin: 60px 60px;
+    height: fit-content;
+}
+
+.a1{
+    grid-area: a1;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.6)), url(./assetsHCIProject/G1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    position: relative;
+}
+
+.a2{
+    grid-area: a2;
+    background-color: black;
+    position: relative;
+    display: block;
+    height: max-content;
+}
+
+.parentTitle{
+    color: white;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    font-size: 2rem;
+}
+
+.infoRectangle{
+    background-color: white;
+    position: relative;
+    margin: 2rem 2rem 2rem 2rem;
+}
+
+.allInfo{
+    margin-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+}
+
+.titleInfo{  
+    font-size: 1.7rem;
+    padding-bottom: 3.8125rem;
+}
+
+.infoOpenToday{
+    font-size: 1.5rem;
+    padding-bottom: 2.5625rem;
+}
+
+.moreDetail{
+    font-size: 1.5rem;
+    text-align: justify;
+    width: 38rem;
+    padding-bottom: 2.5625rem;
+}
+
+.provinceInfo{
+    font-size: 1.5rem;
+}
+
+
+.a3{
+    grid-area: a3;
+    background-color: black;
+    position: relative;
+    display: block;
+}
+
+.a4{
+    grid-area: a4;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.6)), url(./assetsHCIProject/G2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    position: relative;
+}
+
+.a5{
+    grid-area: a5;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.6)), url(./assetsHCIProject/G3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    position: relative;
+}
+
+.a6{
+    grid-area: a6;
+    background-color: black;
+    position: relative;
+    display: block;
+    height: max-content;
+}
+
+footer{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    height: max-content;
+    background-color: #1E1E1E;
+    color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul{
+    display: flex;
+    padding: 2.5rem 2.5rem 0px 2.5rem;
+    
+}
+
+.pisah{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+    padding: 0 auto;
+    
+}
+
+.descList{
+    display: block;
+}
+
+.descList li{
+    padding-bottom: 0.625rem;
+}
+
+.descList p{
+    padding-bottom: 1.9375rem;
+}
+
+.descList a{
+    color: white;
+    font-weight: 600;
+}
+
+.descList img{
+    padding-right: 10px;
+}
+
+.Log{
+    width: 15rem;
+    height: 15rem;
+    padding-top: 1.3rem;
+}
+
+.since{
+    color: white;
+    font-weight: 100;
+    padding-top: 3.75rem;
+    padding-bottom: 2rem;
+}
+
+@media only screen and (max-width:800px){
+    *{
+        font-size: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    header{
+        z-index: 1;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        height: 100%;
+    }
+
+    nav a img{
+        padding-left: 0;
+        width: 180px;
+        height: 60px;
+    }
+
+    .navbar ul li{
+        margin: 3px 0;
+    }
+
+    .navbar ul li a{
+        color: white;
+    }
+
+    .current::before{
+       background: white;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .navbar ul{
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        left: -100%;
+        top: 14ch;
+        gap: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: #1E1E1E;
+        width: 100%;
+        transition: 0.5s;
+    }
+
+    .navbar ul li::after{
+        background: white;
+    }
+
+    .pisah{
+        flex-direction: column;
+    }
+
+    .descList{
+        padding: 0;
+        padding-bottom: 2rem;
+    }
+
+    .gridLocation{
+        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1.3fr 1fr 1.3fr 1fr 1.3fr 1fr;
+        grid-template-areas: 
+            "a1 a1"
+            "a2 a2"
+            "a4 a4"
+            "a3 a3"
+            "a5 a5"
+            "a6 a6"
+        ;
+        height: 100%;
+    }
+
+    .parentTitle{
+        color: white;
+        padding-top: 1.5rem;
+        padding-left: 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .infoRectangle{
+        background-color: white;
+        position: relative;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+    
+    .allInfo{
+        margin-left: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .titleInfo{  
+        font-size: 0.85rem;
+        padding-bottom: 1.90625rem;
+    }
+    
+    .infoOpenToday{
+        font-size: 0.75rem;
+        padding-bottom: 1.28125rem;
+    }
+    
+    .moreDetail{
+        font-size: 0.75rem;
+        text-align: justify;
+        width: 19rem;
+        padding-bottom: 1.28125rem;
+    }
+    
+    .provinceInfo{
+        font-size: 0.75rem;
+    }
+    
+    footer ul{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .since{
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .Log{
+        padding-right: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .Mid{
+        padding-top: 30px;
+    }
+
+    .descList{
+        padding-left: 0;
+    }
+
+    .hamburger.on .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.on .bar:nth-child(1){
+        transform: rotate(45deg) translateY(21px);
+    }
+
+    .hamburger.on .bar:nth-child(3){
+        transform: rotate(-45deg) translateY(-21px);
+    }
+
+    .navbar ul.on{
+        left: 0;
+    }
+
+    .navbar ul li{
+        padding: 0.5rem 1.25rem;
+    }
+}
+
+
+
